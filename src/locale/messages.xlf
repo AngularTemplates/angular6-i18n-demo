@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="homeTitle" datatype="html">
+        <source>
+          Welcome
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aboutTitle" datatype="html">
+        <source>
+          About Us
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about/about.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="langSwitcherCurrent" datatype="html">
+        <source>Current Language:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/language-switcher/language-switcher.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="langSwitcherSelect" datatype="html">
+        <source>Select your Language:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/language-switcher/language-switcher.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="notFoundTitle" datatype="html">
+        <source>
+        Not found 404
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/404/404.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
