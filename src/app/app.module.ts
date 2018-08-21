@@ -5,17 +5,23 @@ import { TransferHttpCacheModule } from '@nguniversal/common';
 
 import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './404/404.component';
-import { AboutComponent } from './about/about.component';
-import { HomeComponent } from './home/home.component';
+import { TemplatesComponent } from './templates/templates.component';
+import { TutorialsComponent } from './tutorials/tutorials.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { LanguageSwitcherComponent } from './language-switcher/language-switcher.component';
 
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatButtonModule} from '@angular/material/button';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    AboutComponent,
+    TutorialsComponent,
+    TemplatesComponent,
     LanguageSwitcherComponent,
     NavBarComponent,
     PageNotFoundComponent
@@ -23,11 +29,17 @@ import { LanguageSwitcherComponent } from './language-switcher/language-switcher
   imports: [
     BrowserModule.withServerTransition({appId: 'my-app'}),
     RouterModule.forRoot([
-      { path: '', component: HomeComponent},
-      { path: 'about', component: AboutComponent},
+      { path: '', component: TutorialsComponent},
+      { path: 'about', component: TemplatesComponent},
       { path: '**', component: PageNotFoundComponent }
     ]),
     TransferHttpCacheModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatMenuModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

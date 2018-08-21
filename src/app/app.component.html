@@ -1,3 +1,22 @@
-<app-language-switcher></app-language-switcher>
-<app-navbar></app-navbar>
-<router-outlet></router-outlet>
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <mat-list>
+      <mat-list-item>
+        <button i18n="@@tutorial-button" type="button" class="btn btn-light" [routerLink]="['/']">Tutorials</button>
+      </mat-list-item>
+      <mat-list-item>
+        <button i18n="@@template-button" type="button" class="btn btn-light" [routerLink]="['/about']">Templates</button>
+      </mat-list-item>
+    <mat-divider></mat-divider>
+    <p i18n="@@language-separator">Language:</p>
+      <mat-list-item *ngFor="let locale of locales">
+        <a [href]="'/' + locale.code + currentUrl">{{ locale.text }}</a>
+      </mat-list-item>
+    </mat-list>
+  </mat-drawer>
+  <mat-toolbar class="toolbar">
+    <i (click)="drawer.toggle()" class="icon ion-md-menu menu-icon"></i>
+    <span i18n="@@toolbar-title" class="title">My Application</span>
+  </mat-toolbar>
+  <router-outlet></router-outlet>
+</mat-drawer-container>

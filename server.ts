@@ -44,6 +44,7 @@ app.get('*', (req, res) => {
   const supportedLocales = ['en', 'es'];
   const defaultLocale = 'en';
   const matches = req.url.match(/^\/([a-z]{2}(?:-[A-Z]{2})?)\//);
+  //Si la url que viene esta ok devuelve es o en
   const locale = (matches && supportedLocales.indexOf(matches[1]) !== -1) ? matches[1] : defaultLocale;
 
   res.render(`${locale}/index`, { req });
