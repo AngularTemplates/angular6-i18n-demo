@@ -1,9 +1,0 @@
-<p i18n="@@langSwitcherCurrent">Current Language:</p>
-<p>{{ locale }}</p>
-
-<h2 i18n="@@langSwitcherSelect">Select your Language:</h2>
-<ul>
-  <li *ngFor="let locale of locales">
-    <a [href]="'/' + locale.code + currentUrl">{{ locale.text }}</a>
-  </li>
-</ul>
