@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
+    "start:heroku": "node dist/server",
+    "heroku-prebuild": "npm install",
+    "heroku-postbuild": "npm run build:i18n-ssr",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",

@@ -19,7 +19,7 @@ We're utilizing packages from the [Angular Universal @nguniversal](https://githu
 ---
 
 ### Installation
-* `npm install` or `yarn`
+* `npm install`
 
 ### Development (Client-side only rendering)
 * run `npm run start` which will start `ng serve`
