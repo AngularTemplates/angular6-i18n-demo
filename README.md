@@ -1,22 +1,9 @@
-# Angular i18n Demo
+# Angular i18n Example App
+This project was built using the [Universal Starter](https://github.com/angular/universal-starter/) repo as a base. However, we deleted some code we didn't use for this example.
 
-This project was built using the Universal Starter repo as a base.
-
-## Getting Started
-
-This demo is built following the [Angular-CLI Wiki guide](https://github.com/angular/angular-cli/wiki/stories-universal-rendering)
-
-We're utilizing packages from the [Angular Universal @nguniversal](https://github.com/angular/universal) repo, such as [ng-module-map-ngfactory-loader](https://github.com/angular/universal/modules/module-map-ngfactory-loader) to enable Lazy Loading.
-
----
-
-### Build Time Server Side Rendering(ssr)
-
-**Server-Side Rendering(ssr)**
-* Happens at runtime
-* Uses `ngExpressEngine` to render your application on the fly at the requested url.
-
----
+### About this repo
+This repo is part of a tutorial where we explain how internationalize an Angular 6 application, also know as i18n.
+Internationalizing our app means that it will be available in different languages, we will have a multi language angular website. The good news is that the new Angular CLI can help us with this task.
 
 ### Installation
 * `npm install`
@@ -24,14 +11,16 @@ We're utilizing packages from the [Angular Universal @nguniversal](https://githu
 ### Development (Client-side only rendering)
 * run `npm run start` which will start `ng serve`
 
-### Production (also for testing SSR/Pre-rendering locally)
-**`npm run build:ssr && npm run serve:ssr`** - Compiles your application and spins up a Node Express to serve your Universal application on `http://localhost:4000`.
+### Demo
+https://i18n-demo-angular-templates.herokuapp.com/
 
-### Production + i18n
+### Build your app for a specific language
+**`ng serve --configuration=es`**
+or
+**`ng serve --configuration=en`**
+
+### Build your app for Production with i18n multi language
 **`npm run build:i18n-ssr && npm run serve:ssr`** - Compiles your application and spins up a Node Express to serve your Universal application on `http://localhost:4000`.
-
-## Universal "Gotchas"
-Moved to [/angular/universal/blob/master/docs/gotchas.md](https://github.com/angular/universal/blob/master/docs/gotchas.md)
 
 # License
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](/LICENSE)
