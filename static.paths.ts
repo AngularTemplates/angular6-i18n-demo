@@ -1,4 +1,5 @@
 export const ROUTES = [
   '/',
-  '/about'
+  '/templates',
+  '/**'
 ];

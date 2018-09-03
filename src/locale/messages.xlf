@@ -25,8 +25,8 @@
       </trans-unit>
       <trans-unit id="homeTitle" datatype="html">
         <source>
-      Tutorials
-    </source>
+          Tutorials
+        </source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/tutorials/tutorials.component.html</context>
           <context context-type="linenumber">3</context>
